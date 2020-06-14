@@ -9,12 +9,11 @@ int main(int argc, char ** args)
 {
     // read the command and args
     COMMANDS command = COMMANDS::HELP;
-    if (argc > 0)
+    // the first arg is the path to this exec
+    if (argc >= 2)
     {
-        std::string in = std::string(args[0]);
+        std::string in = std::string(args[1]);
         command = CommandForString(in);
-        std::cout << in << std::endl;
-        std::cout << std::to_string((int)command) << std::endl;
     }
 
     // switch based on the given command

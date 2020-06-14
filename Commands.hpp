@@ -20,7 +20,14 @@ enum class COMMANDS
 
 COMMANDS CommandForString(std::string str)
 {
-	std::string u{*std::transform(str.begin(), str.end(), str.begin(), std::toupper)};
+	// force command uppercase
+	std::string u;
+	for (auto& c : str)
+	{
+		u.push_back(std::toupper(c));
+	}
+
+	// find desired command - currently only exact matches
 	COMMANDS result = COMMANDS::HELP;
 	if (u == "ADD")
 	{
