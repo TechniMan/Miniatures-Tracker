@@ -18,6 +18,17 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Database.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Miniature.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Commands.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
